@@ -26,6 +26,7 @@ mkDerivation {
     test-framework-quickcheck2 text time transformers transformers-base
     unix-compat unordered-containers vector zlib
   ];
+  doCheck = false;
   homepage = "http://snapframework.com/";
   description = "Snap: A Haskell Web Framework (core interfaces and types)";
   license = stdenv.lib.licenses.bsd3;
