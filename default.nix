@@ -1,5 +1,3 @@
-{ nixpkgs ? import <nixpkgs> {}
-, compiler ? "ghc7103"
-}:
+{ nixpkgs ? import <nixpkgs> {}, compiler }:
 nixpkgs.pkgs.haskell.packages.${compiler}.callPackage ./snap-core.nix { }
 
